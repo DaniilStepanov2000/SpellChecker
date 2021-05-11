@@ -4,19 +4,17 @@ import requests
 from bs4 import BeautifulSoup
 from random import shuffle
 from nltk.tokenize import RegexpTokenizer
-from nltk.corpus import words
+from config import Settings
+import pathlib
 
 
 dict_words = set()
 
-english = words.words()
+settings = Settings.from_json(pathlib.Path('./config.json'))
 
 BASE_number_recursion = 2000
-
-BASE_number_articles = 1000
-
-BASE_start_URL = 'https://ru.wikipedia.org/wiki/%D0%94%D0%B8%D1%81%D0%BA%D0%BE%D0%B3%D1%80%D0%'\
-                'B0%D1%84%D0%B8%D1%8F_%D0%9A%D1%8D%D1%82%D0%B8_%D0%9F%D0%B5%D1%80%D1%80%D0%B8'
+BASE_number_articles = settings.BASE_number_articles
+BASE_start_URL = settings.BASE_start_URL
 
 sys.setrecursionlimit(BASE_number_recursion)
 
@@ -48,11 +46,8 @@ def write_to_file(article_text: str) -> None:
         None.
     """
     count = random.randrange(0, 100000, 1)
-    # break into lines and remove leading and trailing space on each
     lines = (line.strip() for line in article_text.splitlines())
-    # break multi-headlines into a line each
     chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
-    # drop blank lines
     text = '\n'.join(chunk for chunk in chunks if chunk)
 
     try:
