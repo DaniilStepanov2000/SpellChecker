@@ -55,7 +55,7 @@ __Стек, который используется для разработки:
    ```
    python create_data.py
    ```
-8. Запустить скрипт ```check_sentence.py```.
+8. Запустить скрипт ```check_sentence.py```, используя команду:<br>
    ```
    python check_sentence.py
    ```
