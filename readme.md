@@ -29,7 +29,7 @@ __Стек, который используется для разработки:
 3. Активировать виртуальную среду, используя команду:<br>
    _Windows:_
    ``` 
-   venv/Scripts/activate
+   env_name/Scripts/activate
    ```
    _Mac OS / Linux:_
    ``` 
@@ -40,13 +40,23 @@ __Стек, который используется для разработки:
    ```
    pip install -r requirements.txt
    ```
-5. Установить в файле ```create_data.py``` в переменной ```BASE_number_articles``` количество статей, которые надо спарсить (по умолчанию 100).
+5. Создать файл config.json.
 
-6. Запустить скрипт ```create_data.py```, используя команду:<br>
+6. В файле config.json создать переменные:
+   ```BASE_number_articles``` - содержит количество статей для парсинга. __Тип:__ _int_
+   ```BASE_start_URL``` - содержит стартовую ссылку на статью в википедии. С данной ссылки начинается парсинг статей. __Тип:__ _str_
+   ```json
+      {
+     "BASE_number_articles": 50,
+     "BASE_start_URL": "https://ru.wikipedia.org/wiki/%D0%94%D0%B8%D1%81%D0%BA%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F_%D0%9A%D1%8D%D1%82%D0%B8_%D0%9F%D0%B5%D1%80%D1%80%D0%B8"
+      }
+   ```
+   
+7. Запустить скрипт ```create_data.py```, используя команду:<br>
    ```
    python create_data.py
    ```
-7. Запустить скрипт ```check_sentence.py```.
+8. Запустить скрипт ```check_sentence.py```.
    ```
    python check_sentence.py
    ```
