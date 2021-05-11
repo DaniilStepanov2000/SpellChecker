@@ -54,6 +54,13 @@ __Стек, который используется для разработки:
 ## Пример работы проекта
 
 __Шаг 1:__ Запускаем скрипт ```create_data.py```, используя команду: ```python create_data.py```<br><br>
-![image](https://user-images.githubusercontent.com/73431786/117779794-b1c79000-b247-11eb-8f03-179926245877.png)
-__Шаг 1:__ Запускаем скрипт ```check_sentence.py```, используя команду: ```python check_sentence.py```<br><br>
+![image](https://user-images.githubusercontent.com/73431786/117779794-b1c79000-b247-11eb-8f03-179926245877.png)<br><br>
+__Шаг 2:__ Запускаем скрипт ```check_sentence.py```, используя команду: ```python check_sentence.py```<br><br>
+![image](https://user-images.githubusercontent.com/73431786/117780408-45995c00-b248-11eb-92b2-f7ecb87aa245.png)<br><br>
+__Шаг 3:__ Вводим значение<br><br>
+![image](https://user-images.githubusercontent.com/73431786/117780602-75486400-b248-11eb-9e34-c59b47e58642.png)<br><br>
+__Шаг 4:__ Вводим предложение для проверки правильности написания слов и получаем список слов, в которых присутствует ошибка<br><br>
+![image](https://user-images.githubusercontent.com/73431786/117780835-a9238980-b248-11eb-80b0-155245127aa2.png)<br><br>
+__Шаг 5:__ Вводим значение '2' и завершаем работу с программой<br><br>
+![image](https://user-images.githubusercontent.com/73431786/117781122-f869ba00-b248-11eb-954d-34e9197d115f.png)<br><br>
 
