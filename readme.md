@@ -50,3 +50,9 @@ __Стек, который используется для разработки:
    ```
    python check_sentence.py
    ```
+***
+## Пример работы проекта
+
+__Шаг 1:__ Запускаем скрипт ```create_data.py```, используя команду: ```python create_data.py```<br><br>
+__Шаг 1:__ Запускаем скрипт ```check_sentence.py```, используя команду: ```python check_sentence.py```<br><br>
+
