@@ -187,8 +187,6 @@ def start_parse(url: str, counter: int) -> None:
     shuffle(all_links)
     link_to_parse = find_link_to_parse(all_links)
 
-    print(link_to_parse)
-
     print(f'Words in dictionary: {len(dict_words)}')
     print('\n\n')
     counter = counter - 1
